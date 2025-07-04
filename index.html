@@ -411,7 +411,8 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
+
+  <div class="modal is-open">
 
     <div class="modal-overlay">
       <button type="button" class="btn btn-icon-close">
@@ -426,7 +427,7 @@
           <label class="modal-label" for="user-name">Name</label>
 
           <div class="modal-input">
-            <input class="modal-input-box" type="text" name="name" id="user-name">
+            <input class="modal-input-box" type="text" name="user-name" id="user-name">
             <svg class="modal-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
@@ -455,11 +456,11 @@
 
         <div class="form-list">
           <label class="modal-label" for="user-comment">Comment</label>
-          <textarea class="modal-textarea" name="comment" placeholder="Text input" id="user-comment"></textarea>
+          <textarea class="modal-textarea" name="user-comment" placeholder="Text input" id="user-comment"></textarea>
         </div>
 
         <div class="form-list-policy">
-          <input class="modal-input-policy visually-hidden" type="checkbox" value="true" name="policy"
+          <input class="modal-input-policy visually-hidden" type="checkbox" value="true" name="user-privacy"
             id="user-privacy">
           <label class="modal-policy-label" for="user-privacy">
             <span class="checkbox-span">
@@ -469,7 +470,7 @@
             </span>
             I accept the terms and conditions of the
             <span class="privacy-policy-span">
-              Privacy Policy
+              <a class="policy-link" href="#">Privacy Policy</a>
             </span>
           </label>
         </div>
